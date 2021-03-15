@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@700&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Source+Code+Pro:wght@700&display=swap');
 
+
+* {
+	transition: .2s linear;
+}
 
 html,
 body {
@@ -7,7 +11,6 @@ body {
 	padding         : 0%;
 	background-color: var(--primary-color);
 	scroll-behavior: smooth;
-	transition: .2s linear;
 }
 
 h1 {
@@ -33,9 +36,9 @@ h4,
 h5,
 h6,
 strong {
-	font-family: 'Karma', sans-serif;
-	margin     : 0;
-	padding    : 0;
+	font-family: 'source code pro', sans-serif;
+	margin     : 1rem 0rem;
+	padding: 0;
 	color      : var(--heading-txt);
 }
 
@@ -86,7 +89,7 @@ a:visited {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
-	background-color: #111;
+	background-color: var(--secondary-color);
 	padding: .5rem;
 	border-radius: 1rem;
 	height: 1rem;
@@ -96,8 +99,9 @@ a:visited {
 	justify-content: space-between;
 }
 
-label img {
+label>img {
 	width: 1rem;
+	height: 1rem;
 }
 
 #toggle {
@@ -140,6 +144,7 @@ label img {
 /* intro section */
 #intro-section {
 	height         : 15rem;
+	text-align: center;
 	display        : flex;
 	align-items    : center;
 	justify-content: center;
@@ -295,6 +300,7 @@ label img {
 }
 
 .skills-container {
+	margin: 2rem auto;
 	grid-area      : "lang-container";
 	display        : flex;
 	flex-flow      : row wrap;
@@ -319,6 +325,7 @@ label img {
 }
 
 .tools-container {
+	margin: 2rem auto;
 	grid-area      : "tools-container";
 	display        : flex;
 	flex-flow      : wrap;
@@ -385,21 +392,22 @@ label img {
 @media screen and (max-width: 767px) {
 	
 	#back-to-top {
-		width: 28px;
-		height: 28px;
+		width: 2rem;
+		height: 2rem;
 		right: 2rem;
 		bottom: 2rem;
 	}
 
 	#back-to-top img{
-		width: 28px;
+		width: 2rem;
 		
 	}
 	.about-section {
-		padding: 1rem .3rem;
+		padding: .25rem .3rem;
 	}
 
 	.about-box {
+		margin: 1.5rem 0rem;
 		display              : grid;
 		justify-content      : center;
 		grid-template-columns: 1fr;
