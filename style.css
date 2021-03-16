@@ -36,7 +36,7 @@ h4,
 h5,
 h6,
 strong {
-	font-family: 'source code pro', sans-serif;
+	font-family: 'source code pro', 'consolas', 'monaco', monospace;
 	margin     : 1rem 0rem;
 	padding: 0;
 	color      : var(--heading-txt);
