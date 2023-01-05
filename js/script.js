@@ -1,9 +1,9 @@
 if('dark.css' == localStorage.getItem('theme')) {
-	document.getElementById('theme').href = 'dark.css'
+	document.getElementById('theme').href = '/css/dark.css'
 	document.getElementById('toggle').checked = true;
 }
 else {
-	document.getElementById('theme').href = 'light.css'
+	document.getElementById('theme').href = '/css/light.css'
 	document.getElementById('toggle').checked  = false;
 }
 
@@ -18,7 +18,7 @@ window.onscroll = function() {
 const ckbox = document.getElementById('toggle');
 ckbox.addEventListener('change', function(){
 	let theme = document.getElementById('theme');
-	let stylesheet = ckbox.checked ? 'dark.css' : 'light.css'
+	let stylesheet = ckbox.checked ? '/css/dark.css' : '/css/light.css'
 	theme.href = stylesheet;
 	localStorage.setItem('theme', stylesheet);
 });

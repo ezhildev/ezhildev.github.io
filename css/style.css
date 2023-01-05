@@ -42,6 +42,7 @@ strong {
 	color      : var(--heading-txt);
 }
 
+a,
 p,
 li,
 span,
@@ -68,6 +69,7 @@ a:visited {
 	-moz-box-shadow   : 0px 1px .25rem .01rem var(--box-shadow-color);
 	box-shadow        : 0px 1px .25rem .01rem var(--box-shadow-color);
 	background   : var(--primary-color);
+	overflow: hidden;
 	transition   : .35s ease;
 }
 
@@ -266,21 +268,24 @@ label>img {
 	border-bottom: .25rem dashed var(--primary-color);
 }
 
+.projects-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
 .project-card {
 	width                : 300px;
 	margin               : 1rem;
 	display              : grid;
 	grid-template-columns: 1fr;
-	grid-template-rows   : 150px 75px 150px;
-
+	grid-template-rows   : 150px 75px 100px 75px;
 }
 
 
 .project-img {
-	background-image       : url("img/Maskman.png");
-	border-top-left-radius : .3rem;
-	border-top-right-radius: .3rem;
-	background-size        : cover;
+	width: 300px;
+	height: 150px;
 }
 
 .project-title {
@@ -289,7 +294,16 @@ label>img {
 }
 
 .project-description {
-	margin: 0rem .7rem.7rem;
+	margin: 0rem .6rem;
+	padding: 0rem .3rem;
+}
+
+.project-link {
+	margin: 1rem auto;
+	padding: .6rem 1.2rem;
+	border-radius: 4px;
+	text-decoration: none;
+	background-color: var(--secondary-color);
 }
 
 /* skill-section */
@@ -361,8 +375,10 @@ label>img {
 	border-radius: .5rem;
 	margin       : 3rem auto;
 	padding      : .5rem 1rem;
+	-webkit-box-shadow: 0px 0px .2rem 1px var(--btn-color);
+	-moz-box-shadow   : 0px 0px .2rem 1px var(--btn-color);
+	box-shadow        : 0px 0px .2rem 1px var(--btn-color);
 	transition   : .1s ease-in;
-	opacity: 80%;
 }
 .contact-btn>p{
 	color        : var(--primary-color);
@@ -370,9 +386,9 @@ label>img {
 .contact-btn:hover {
 	opacity: 100%;
 	transform         : scale(1.05);
-	-webkit-box-shadow: 0px 0px .5rem 1px var(--box-shadow-color);
-	-moz-box-shadow   : 0px 0px .5rem 1px var(--box-shadow-color);
-	box-shadow        : 0px 0px .5rem 1px var(--box-shadow-color);
+	-webkit-box-shadow: 0px 0px .5rem 1px var(--btn-color);
+	-moz-box-shadow   : 0px 0px .5rem 1px var(--btn-color);
+	box-shadow        : 0px 0px .5rem 1px var(--btn-color);
 }
 
 .other-contact {
