@@ -30,7 +30,7 @@ projects.forEach(
         <img src=${project.img} alt="Maskman">
         <h3>${project.name}</h3>
         <p>${project.desc}</p>
-        <a href="${project.link}" class="btn">SOURCE CODE</a>
+        <a href="${project.link}" class="btn" target="_blank">SOURCE CODE</a>
     </div>
         `;
         projectsContainer.innerHTML += element;
