@@ -1,194 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-		<link id="theme" rel="stylesheet" href="/css/light.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <title>Ezhil</title>
-    </head>
-    <body>
-		<div id="back-to-top">
-			<a href="#intro-section">
-				<div class="up-arrow"></div>
-				<img src="img/up-arrow.svg" alt="">
-			</a>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+    <link rel="manifest" href="./src/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ezhil Dev</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">EZHIL <span>DEV</span></div>
+      <i class='bx bx-menu menu' id="menu"></i>
+      <div class="nav" id="menu-list">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
 
-		<div id="theme-toggle">
-			<input id="toggle" type="checkbox">
-			
-			<label for="toggle">
-				<img src="img/moon.png" alt="moon">
-				<img src="img/sun.png" alt="sun">
-				<div class="ball"></div>
-			</label>
-		</div>
+    <div class="home container" id="home">
+      <div class="home-contents">
+        <h1>Hi, I'm Ezhil</h1>
+        <p>A passionate software developer <br> <b><span>Who code for Fun.</span></p>
+        <a href="src/Ezhilarasan-Resume.pdf" class="btn" download>RESUME</a>
+      </div>
 
-        <section id="intro-section">
-            <h1>Hi, I'm Ezhil</h1>
-        </section>
+      <div class="profile-img">
+        <img src="src/EZHIL-M.webp" draggable="false" alt="Ezhil">
+      </div>
+    </div>
 
-        <section id="about-section">
-			<div class="about-box">
-				<div class="top-div">
-					<div class="nav-container">
-						<a href="#project-section">
-							<p>Projects</p>
-						</a><a href="#skills-section">
-							<p>Skills</p>
-						</a><a href="#contact-section">
-							<p>Contact</p>
-						</a>
-					</div>
-					
-					<div class="btn-container">
-						<div class="green rbtn"></div>
-						<div class="yello rbtn"></div>
-						<div class="red rbtn"></div>
-					</div>
-				</div>
-				<div class="left-div">
-					<img  src="img/ezhil.png" alt="ezhil">
-					<p>Ezhilarasan</p>
-				</div>
-				<div class="right-div">
-					<div class="right-inner-div">
-						<h3>About</h3>
-							<p>&emsp;My name is Ezhilarasan😑. I'm currently pursuing MCA. I love coding and developing new solution for an appliction. Also a self taught learner🤓, problem solver🤔 and indie game developer🎮.</p>
-					</div>
-				</div>
-			</div>
-        </section>
+    <div class="separator"></div>
 
-		<section id="project-section">
-			<h2>Projects</h2>
-			<div class="projects-card-container">
-				<div class="project-card card">
-					<img class="project-img" src="/img/Maskman.png" alt="Mask-Man-Running">
-					<div class="project-title">
-						<h4>Mask man</h4>
-					</div>
-					<div class="project-description">
-						<p><strong>Mask man</strong> is 2d endless running game like Temple run. My main aim is make game for desktop, mobile and web.</p>
-					</div>
-					<a class ="project-link" href="https://github.com/Ezhilarasan-developer/Mask-Man-Running" target="_blank">SOURCE CODE</a>
-				</div>
-				<div class="project-card card">
-					<img src="/img/Ninjacroaky.png" alt="" class="project-img">
-					<div class="project-title">
-						<h4>Ninja croaky</h4>
-					</div>
-					<div class="project-description">
-						<p><strong>Ninja croaky</strong> is a puzzle platformer game and it's made with python, pygame.</p>
-					</div>
-					<a class ="project-link" href="https://github.com/ezhildev/Ninja-croaky" target="_blank">SOURCE CODE</a>
-				</div>
-				<div class="project-card card">
-					<img src="https://ezhildev.github.io/limp/src/graphics/Screenshots/5.PNG" alt="" class="project-img">
-					<div class="project-title">
-						<h4>Limp</h4>
-					</div>
-					<div class="project-description">
-						<p><strong>Limp</strong> is a puzzle platformer game and it's made with python, pygame.The game concept is The player to finish the level with few jumps.</p>
-					</div>
-					<a class ="project-link" href="https://github.com/ezhildev/limp" target="_blank">SOURCE CODE</a>
-				</div>
-			</div>
-		</section>
-		
-        <section id="skills-section">
-			<h2>Skills</h2>
-			<h3>Programming Language</h3>
-			<div class="skills-container">
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/python.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>Python</p>
-					</div>
-				</div>
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/java.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>Java</p>
-					</div>
-				</div>
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/html.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>HTML</p>
-					</div>
-				</div>
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/css.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>CSS</p>
-					</div>
-				</div>
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/javascript.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>Javascript</p>
-					</div>
-				</div>
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/mysql.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>MySQL</p>
-					</div>
-				</div>
-			</div>
-			<h3>Tools</h3>
-			<div class="tools-container">
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/git.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>Git</p>
-					</div>
-				</div>
-				<div class="skill-card card">
-					<div class="skill-img theme-apply">
-						<img src="img/github.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>Github</p>
-					</div>
-				</div>
-				<div class="skill-card card">
-					<div class="skill-img">
-						<img src="img/linux.svg" alt="">
-					</div>
-					<div class="skill-title">
-						<p>Linux</p>
-					</div>
-				</div>
-			</div>
-        </section>
-		
-        <section id="contact-section">
-			<h2>Contact</h2>
-			<a class="contact-btn" href="mailto:ezhilarasan.developer@gmail.com"><p>Mail Me</p></a>
-			<div class="other-contact theme-apply">
-				<a href="https://github.com/ezhildev/" target="_blank"><img src="img/github.svg" alt="github"></a>
-				<a href="https://www.linkedin.com/in/ezhilarasan-developer/" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
-			</div>
-        </section>
-		<script src="/js/script.js"></script>
-    </body>
+    <div class="about container" id="about">
+      <h2 class="title">ABOUT</h2>
+      <div class="about-img">
+        <img src="src/about.svg" alt="about-img">
+      </div>
+      <div class="about-contents">
+        <h2>About</h2>
+        <p>Hi, my name is Ezhilarasan. I'm very passionate and dedicated to my work. I love coding and developing new solution for an appliction. Also a self taught learner🤓, problem solver🤔 and indie game developer🎮.</p>
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="projects container" id="projects">
+      <h2 class="title">PROJECTS</h2>
+      <!-- js will fill the code here -->
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="skills container" id="skills">
+      <h2 class="title">SKILLS</h2>
+      <h3>Programming Languages</h3>
+      <div class="item-container" id="prog">
+      </div>
+      <h3>Tools & Technologies</h3>
+      <div class="item-container" id="techs">
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="contact" id="contact">
+      <h2 class="title">CONTACT</h2>
+      <div class="item-container" id="contact-links">
+        <a href="mailto:ezhilarasan.developer@gmail.com"><i class='bx bxl-gmail' ></i></a>
+        <a href="https://github.com/ezhildev/"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/ezhilarasan-developer/"><i class='bx bxl-linkedin' ></i></a>
+        
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
