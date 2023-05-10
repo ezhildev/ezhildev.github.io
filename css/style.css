@@ -221,7 +221,7 @@ h2 {
 }
 
 .skills {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .skills h3 {
@@ -275,17 +275,17 @@ h2 {
     }
 
     .nav {
-        height: 100vh;
         margin: 1rem 0;
         flex-basis: 100%;
         display: none;
         flex-wrap: wrap;
+        align-items: stretch;
         transition: .3s;
     } 
 
     .nav a{
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 1rem;
         font-size: 1.25rem;
         flex-basis: 100%;
     }
